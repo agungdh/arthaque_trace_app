@@ -5,8 +5,7 @@ class Arth extends CI_Controller {
 
 	public function aq()
 	{
-		header("Access-Control-Allow-Methods: GET");
-		header("Access-Control-Allow-Headers: Content-Type, Content-Length, Accept-Encoding");
+		header("Access-Control-Allow-Origin: *");
 		
 		if ($this->input->get('arthaque')) {
 			$this->db->insert('neng', [
